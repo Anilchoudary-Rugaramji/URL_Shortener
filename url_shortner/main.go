@@ -204,7 +204,7 @@ func fetchOriginalURLs(db *sql.DB, shortCodes []string) {
 	}
 	defer rows.Close()
 
-	// Print fetched URLs (optional)
+	// Print fetched URLs (optional),,
 	for rows.Next() {
 		var originalURL string
 		if err := rows.Scan(&originalURL); err != nil {
